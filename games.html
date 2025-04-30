@@ -4,40 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Links</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1f4037, #99f2c8);
-      color: #fff;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      color: #ffeb3b;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin: 1rem 0;
-    }
-    a {
-      color: #ff9800;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-  <h1>Game Links</h1>
-  <ul>
-    <li><a href="pc_games.html">(PC Games)</a></li>
-    <li><a href="https://www.freeroms.com/">FreeROMS (Console ROMs)</a></li>
-    <li><a href="https://apkpure.com/">APKPure (Android Games)</a></li>
-    <li><a href="https://romsgames.net/">RomsGames (Retro & More)</a></li>
-  </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Anomius Gamer Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li style="--index: 1;"><a href="index.html">Home</a></li>
+        <li style="--index: 2;"><a href="emulator.html">Emulators</a></li>
+        <li style="--index: 3;"><a href="games.html">Games</a></li>
+        <li style="--index: 4;"><a href="pc_games.html">PC Games</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Game Links</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>PC Games</h3>
+          <p>Find PC game downloads.</p>
+          <a href="pc_games.html" class="btn">Visit</a>
+        </div>
+        <div class="card">
+          <h3>FreeROMS</h3>
+          <p>Download console ROMs for emulators.</p>
+          <a href="https://www.freeroms.com/" class="btn">Visit</a>
+        </div>
+        <div class="card">
+          <h3>APKPure</h3>
+          <p>Get Android games and apps.</p>
+          <a href="https://apkpure.com/" class="btn">Visit</a>
+        </div>
+        <div class="card">
+          <h3>RomsGames</h3>
+          <p>Retro and modern game ROMs.</p>
+          <a href="https://romsgames.net/" class="btn">Visit</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Anomius Gamer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
