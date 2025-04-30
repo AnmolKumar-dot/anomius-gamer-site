@@ -4,41 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emulator Downloads</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #000428, #004e92);
-      color: #fff;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      color: #ffd700;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-  <h1>Emulator Downloads</h1>
-  <ul>
-    <li><a href="https://aethersx2.com/">AetherSX2 (PS2)</a></li>
-    <li><a href="https://www.ppsspp.org/">PPSSPP (PSP)</a></li>
-    <li><a href="https://www.m64p.com/">M64Plus (N64)</a></li>
-    <li><a href="https://dolphin-emu.org/">Dolphin (GameCube/Wii)</a></li>
-    <li><a href="https://github.com/brunodev85/winlator">Winlator (Windows)</a></li>
-  </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Anomius Gamer Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li style="--index: 1;"><a href="index.html">Home</a></li>
+        <li style="--index: 2;"><a href="emulator.html">Emulators</a></li>
+        <li style="--index: 3;"><a href="games.html">Games</a></li>
+        <li style="--index: 4;"><a href="pc_games.html">PC Games</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Emulator Downloads</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>AetherSX2 (PS2)</h3>
+          <p>Emulate PlayStation 2 games on Android.</p>
+          <a href="https://aethersx2.com/" class="btn">Download</a>
+        </div>
+        <div class="card">
+          <h3>PPSSPP (PSP)</h3>
+          <p>Play PSP games with high compatibility.</p>
+          <a href="https://www.ppsspp.org/" class="btn">Download</a>
+        </div>
+        <div class="card">
+          <h3>M64Plus (N64)</h3>
+          <p>Run Nintendo 64 games smoothly.</p>
+          <a href="https://www.m64p.com/" class="btn">Download</a>
+        </div>
+        <div class="card">
+          <h3>Dolphin (GameCube/Wii)</h3>
+          <p>Emulate GameCube and Wii titles.</p>
+          <a href="https://dolphin-emu.org/" class="btn">Download</a>
+        </div>
+        <div class="card">
+          <h3>Winlator (Windows)</h3>
+          <p>Run Windows apps and games on Android.</p>
+          <a href="https://github.com/brunodev85/winlator" class="btn">Download</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Anomius Gamer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
