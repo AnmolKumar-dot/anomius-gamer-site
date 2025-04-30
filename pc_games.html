@@ -3,38 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PC GAMES</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1f4037, #99f2c8);
-      color: #fff;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      color: #ffeb3b;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin: 1rem 0;
-    }
-    a {
-      color: #ff9800;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>PC Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-  <h1>PC GAMES</h1>
-  <ul>
-    <li><a href="magnet:?xt=urn:btih:5663c6c31c29bc2f3923544d31a960a5b9609e35&dn=GTAV_Linux&tr=http%3a%2f%2fbt4.t-ru.org%2fann&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce">(GTA V)</a></li>
-  </ul>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Anomius Gamer Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li style="--index: 1;"><a href="index.html">Home</a></li>
+        <li style="--index: 2;"><a href="emulator.html">Emulators</a></li>
+        <li style="--index: 3;"><a href="games.html">Games</a></li>
+        <li style="--index: 4;"><a href="pc_games.html">PC Games</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>PC Games</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>GTA V</h3>
+          <p>Download Grand Theft Auto V for PC.</p>
+          <a href="magnet:?xt=urn:btih:5663c6c31c29bc2f3923544d31a960a5b9609e35&dn=GTAV_Linux&tr=http%3a%2f%2fbt4.t-ru.org%2fann&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce" class="btn">Download</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Anomius Gamer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
