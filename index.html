@@ -4,83 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ANOMIUS GAMER</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: #fff;
-    }
-    header {
-      background-color: rgba(0,0,0,0.3);
-      padding: 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      color: #ffd700;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 0.8rem;
-    }
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .tutorial {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 1rem;
-      border-radius: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
   <header>
-    <h1>ANOMIUS GAMER</h1>
-    <p>Your hub for Android emulation and gaming guides</p>
-  </header>
-  <div class="container">
-    <section>
-      <h2>Useful Links</h2>
-      <ul>
-        <li><a href="emulator.html">Link 1: Emulator Download</a></li>
-        <li><a href="https://youtube.com/@impotent_raaaaeggg?si=Ohf-7Vsv9oM3gfLu">Link 2: YT Channel</a></li>
-        <li><a href="games.html">Link 3: Games</a></li>
-        <li><a herf="#">Link 4: Recommend Settings</li>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Anomius Gamer Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li style="--index: 1;"><a href="index.html">Home</a></li>
+        <li style="--index: 2;"><a href="emulator.html">Emulators</a></li>
+        <li style="--index: 3;"><a href="games.html">Games</a></li>
+        <li style="--index: 4;"><a href="pc_games.html">PC Games</a></li>
       </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ANOMIUS GAMER</h1>
+      <p>Your hub for Android emulation and gaming guides</p>
+      <a href="#links" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="links">
+      <h2>Useful Links</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Emulator Download</h3>
+          <p>Find the best emulators for Android gaming.</p>
+          <a href="emulator.html" class="btn">Visit</a>
+        </div>
+        <div class="card">
+          <h3>YT Channel</h3>
+          <p>Watch tutorials and gameplay on our YouTube.</p>
+          <a href="https://youtube.com/@impotent_raaaaeggg?si=Ohf-7Vsv9oM3gfLu" class="btn">Watch</a>
+        </div>
+        <div class="card">
+          <h3>Games</h3>
+          <p>Discover ROMs and Android games.</p>
+          <a href="games.html" class="btn">Explore</a>
+        </div>
+        <div class="card">
+          <h3>Recommended Settings</h3>
+          <p>Optimize your emulator settings.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Tutorials</h2>
-      <div class="tutorial">
-        <h3>How to Set Up AetherSX2</h3>
-        <p>This guide walks you through the steps to install and optimize AetherSX2 for best performance on Android devices.</p>
-      </div>
-      <div class="tutorial">
-        <h3>PPSSPP Best Settings for Low-End Devices</h3>
-        <p>Learn how to configure PPSSPP to run games smoothly on lower-spec smartphones.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>How to Set Up AetherSX2</h3>
+          <p>Install and optimize AetherSX2 for best performance on Android devices.</p>
+          <a href="#" class="btn">Read Guide</a>
+        </div>
+        <div class="card">
+          <h3>PPSSPP Best Settings</h3>
+          <p>Configure PPSSPP for low-end smartphones.</p>
+          <a href="#" class="btn">Read Guide</a>
+        </div>
       </div>
     </section>
   </div>
+
+  <footer>
+    <p>© 2025 Anomius Gamer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
