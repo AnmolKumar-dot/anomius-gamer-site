@@ -85,15 +85,16 @@ body {
 .btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: #1e90ff;
-  color: #fff;
+  background: #00ff00; /* Updated to green */
+  color: #000;
   text-decoration: none;
   border-radius: 5px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  box-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff66;
+  background: #00cc00; /* Darker green on hover */
+  box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff0066;
   transform: scale(1.05);
 }
 
@@ -156,6 +157,67 @@ footer {
   background: #111;
 }
 
+/* Winlator Content Section */
+.winlator-content {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.winlator-content h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.winlator-content p {
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ccc;
+}
+
+/* Version List Layout (match card-grid styling) */
+.version-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Version Card Styling (match card styling) */
+.version-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, box-shadow 0.3s ease-out;
+  text-align: center; /* Center content inside the card */
+}
+
+.version-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.version-card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.version-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00ffcc; /* Fixed invalid color value #00ffcc-dot-cc */
+}
+
+.version-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -187,12 +249,16 @@ footer {
   .hero h1 {
     font-size: 2.5rem;
   }
+
+  .winlator-content {
+    padding: 2rem 1rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .card, .nav-menu, .btn, .hero-content {
+  .card, .version-card, .nav-menu, .btn, .hero-content {
     transition: none;
     transform: none;
     box-shadow: none;
   }
-}
+  }
